@@ -1,0 +1,22 @@
+#navbar{
+    flex-direction:column;
+}
+/* #navbar .logo{
+    margin:2px 2px;
+} */
+#navbar .logo img{
+    height:55px;
+    width:50px;
+    margin:20px 0px;
+}
+#navbar ul li a{
+    font-size:0.8rem;
+    padding:0px 22px;
+}
+.services{
+    flex-direction:column;
+}
+#home{
+    padding:0px 7px;
+    height:350px;
+}

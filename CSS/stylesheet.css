@@ -1,0 +1,223 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* css variables recommended */
+:root{
+    --navbar-height:29px;
+}
+
+
+/* navigation bar */
+#navbar{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    position:sticky;
+    top:0px;
+    left:0px;
+    display:flex;
+    align-items: center;
+    background-color: rgb(70, 65, 65);
+    /* overflow:hidden; */
+    opacity:0.5;
+    height:68px;
+}
+#navbar::before{
+    content:"";
+    position:absolute;
+    background-color: black;
+    width:100%;
+    height:100%;
+    opacity:0.4;
+    z-index:-1;
+    top:0px;
+    left:0px;
+}
+#navbar .logo{
+    margin:-29px 14px;
+    
+}
+#navbar .logo img{
+    height:70px;
+    width:70px;
+    margin:3px 1px;
+}
+
+#navbar ul{
+    display:flex;
+    
+}
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    /* margin:25px 30px; */
+    padding:4px 35px;
+    color:white;
+    text-decoration:none;
+    display:block;
+    border-radius: 20px;
+}
+#navbar li a:hover{
+    background-color: white;
+    color:black;
+}
+
+/* home */
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 200px;
+    height:344px;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    background: url('../images/background.png.jpg') no-repeat center center/cover;
+    width:100%;
+    height:82%;
+    opacity:0.6;
+    z-index:-1;
+    top:0px;
+    left:0px;
+}
+#home h1{
+    color:red;
+    text-align:center;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    font-size:1.3rem;
+    color:rgb(104, 60, 60);
+    text-align:center;
+}
+
+/* services */
+#services-container{
+    background-color:#d3e5f4;
+}
+#services-container h2{
+    font-weight:900;
+    color:blue
+}
+.services{
+    display: flex;
+    margin:4px 12px;
+    justify-content: center;
+    align-items: center;
+}
+.services .box{
+    border:2px solid red;
+    /* width:auto; */
+    /* padding:auto; */
+    margin:10px;
+    background-color: rgb(237, 208, 208);
+    border-radius: 20px;
+    margin-bottom:12px;
+}
+.services .box h2{
+    color: black;
+    font-weight:bold;
+}
+.services .box p{
+    text-align:center;
+    color: black;
+    /* font-style:monospace; */
+}
+.services .box img{
+    /* height:100px; */
+    /* width:100px; */
+    display:block;
+    margin:auto;
+    margin-top:12px;
+}
+#credit h2{
+    font-size:3.2rem;
+    font-weight: 900;
+    text-shadow: 5px 5px yellow;
+}
+#credit img{
+    width:100%;
+}
+
+#contactus::before{
+    content:"";
+    /* background-color: black; */
+    background:url('../images/contactus.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:0.6;
+    z-index:-1;
+}
+#contactus{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    color:black;
+    position:relative;
+}
+#contactus .formsection label{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+#contactus form{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:2px auto;
+    width:100%;
+}
+.formsection .entry input,
+.formsection .entry textarea{
+    width:100%;
+    border-radius: 10px;
+    padding:12px;
+    border:2px solid white;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    font-size:1.3rem;
+    margin-bottom:5px;
+    padding:3px;
+}
+/* .credit h2::before{
+    content:"";
+    background:url('/TechonologyCompanyLogos1_generated.jpg') no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:0.89;
+    z-index:-1;
+} */
+.btn{
+    padding: 5px 12px;
+    border:2px solid white;
+    background-color: rgb(145, 122, 119);
+    margin:17px;
+    color:white;
+    font-size:1.3rem;
+    border-radius:10px;
+    cursor:pointer;
+}
+.h-primary{
+    font-size: 2.3rem;
+    padding:8px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+.h-secondary{
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 1.8rem;
+    padding:0px;
+}
+.center{
+    text-align:center;
+}
